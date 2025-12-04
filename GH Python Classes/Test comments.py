@@ -14,3 +14,4 @@ def nd_function(argument1, argument2, x, y, z):
 my_function("Baktygul", "Heey!")
 nd_function(" 1", "4", "+", "4", "5")
 
+help("function")
