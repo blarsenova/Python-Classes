@@ -11,3 +11,12 @@ print(tip_Amount, " is a tip amount")
 print(billForEachGuestwTips, " is a bill with tips")
 
 #Bill with input
+
+totalGuests2 = int(input("Enter total number of guests "))
+totalBill2 = int (input("Now add total bill "))
+tip_Percent = int(input("finally, add tip % "))
+TipAmount = (tip_Percent/100)*totalBill2
+billForEachGuestwTips2 = totalBill2/totalGuests2 + TipAmount
+print(TipAmount, " is a total tip amount")
+print(billForEachGuestwTips2, " and its a total bill w tips")
+
