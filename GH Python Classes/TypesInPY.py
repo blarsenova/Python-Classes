@@ -36,4 +36,23 @@ myListNames.index('Moe')
 print(myListNames.index('Zoe'))
 myListNames.sort()
 print(myListNames)
+myListNames.reverse()
+print(myListNames)
+
+my_Element= myListNames.pop(0)
+print(my_Element)
+print(len(myListNames))
+
+####input thru Terminal####
+myInput = input()
+print(myInput)
+
+num=int(input())
+print(num)
+
+#####output formatting####
+a=5.009
+b=0.63
+c="good morning"
+print("a is %d, b is %0.9f, c is %s" % (a,b,c))
 
