@@ -17,3 +17,17 @@ def guess_the_number():
             guess = int(guess_str)
             attempts += 1
 
+            # Provide feedback to the user
+            if guess < secret_number:
+                print("Too low, try again.\n")
+            elif guess > secret_number:
+                print("Too high, try again.\n")
+            else:
+                # The loop breaks when the guess is correct
+                print(f"Congratulations! You guessed the number {secret_number} correctly in {attempts} attempts!")
+        except ValueError:
+            # Handle non-integer input gracefully
+            print("Invalid input. Please enter a valid integer.\n")
+
+if __name__ == "__main__":
+    guess_the_number()
