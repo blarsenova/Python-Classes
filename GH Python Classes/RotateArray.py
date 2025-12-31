@@ -11,7 +11,7 @@ def rotate_right(nums, k):
     nums[k:] = reversed(nums[k:])  # Rest
     return nums
 
-
+#####2####
 def rotate_right_short(nums, k):
     """Return new rotated list, original unchanged"""
     k %= len(nums)
