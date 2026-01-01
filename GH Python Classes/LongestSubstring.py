@@ -26,3 +26,7 @@ def longest_substring_without_repeating(s: str) -> tuple:
 
     return max_length, s[max_start:max_start + max_length]
 
+# Test it
+result = longest_substring_without_repeating("wheelsonwheel")
+print(result)  # Output: (3, 'abc')
+
