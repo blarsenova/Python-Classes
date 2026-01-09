@@ -20,3 +20,10 @@ def rotate_array_in_place(arr, k):
     reverse_section(arr, k, n - 1)
 
     return arr
+
+if __name__ == "__main__":
+    # Test case 1
+    arr = [1, 2, 3, 4, 5, 6, 7]
+    k = 3
+    print("Original array:", arr)
+    print("Rotated array:", rotate_array_in_place(arr.copy(), k))
