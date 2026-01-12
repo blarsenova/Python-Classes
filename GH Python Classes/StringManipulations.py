@@ -14,3 +14,8 @@ print(astring1[::-1])
 astring2="Elephant"
 print(astring2.upper())
 print(astring2.startswith("Elephan"))
+
+#split
+astring3 = "First, Second Baktygul"
+afewwords=astring3.split("s")
+print(afewwords)
