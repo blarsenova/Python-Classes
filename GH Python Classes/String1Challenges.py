@@ -26,3 +26,13 @@ def fix_start(s):
 
 print(fix_start("babble"))
 print(fix_start("vveryyy"))
+
+#D
+
+def mix_up(a, b):
+    a_swapped = b[:2] + a[2:]
+    b_swapped = a[:2] + b[2:]
+
+    return a_swapped + ' ' + b_swapped
+
+print(mix_up('dog', 'dinner'))
