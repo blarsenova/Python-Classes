@@ -36,3 +36,20 @@ def mix_up(a, b):
     return a_swapped + ' ' + b_swapped
 
 print(mix_up('dog', 'dinner'))
+
+# In, Is, Not
+print('==============')
+a=2
+a==2
+
+x=[1,2,3]
+y=[1,2,3]
+z=x
+print(x==y)
+print(x is y) # IS looks for a memory address, under the hood
+print(z is x)
+
+print('-----------')
+print(not False) #true
+print((not False)== (False))
+
