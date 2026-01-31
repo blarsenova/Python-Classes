@@ -14,3 +14,12 @@ else:
             max_val = num
 
     print(f"Min: {min_val}, Max: {max_val}")
+
+
+    #2 with BuiltIn Python functions numbers = [42, 7, 19, 88, 3, 25]
+
+minimum = min(numbers)
+maximum = max(numbers)
+
+print(f"Min: {minimum}") # Output: 3
+print(f"Max: {maximum}") # Output: 88
