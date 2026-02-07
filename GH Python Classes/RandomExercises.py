@@ -8,9 +8,12 @@
 #3. Then, "update" a score by replacing the entire tuple at that index.
 
 
-tuple1 = [("Alice", 85), ("Bob", 75), ("Kurmanjan", 1), ("KeroKero", 99)]
+tuple1 = [("Alice", 85), ("Bob", 75), ("Kurmanjan", 100), ("KeroKero", 99)]
 
 from operator import itemgetter
 # Sorts by the item at index 1
-result = sorted(tuple1, key=itemgetter(1))
+result = sorted(tuple1, key=itemgetter(1), reverse=True)
 print(result)
+tuple1[1]='nei', 55
+print(tuple1)
+tuple1[0][1] = 95  # This will trigger the TypeError
