@@ -17,9 +17,9 @@ result = sorted(tuple1, key=itemgetter(1), reverse=True)
 print(result)
 tuple1[1] = 'nei', 55
 print(tuple1)
-#tuple1[0][1] = 95  # This will trigger the TypeError
+# tuple1[0][1] = 95  # This will trigger the TypeError
 
-#2
+# 2
 text = "I am at 10th grade. Want to graduate and enter a college, and then graduate from there, and find a job"
 
 # 1. Clean the string (remove commas/periods and make lowercase)
@@ -35,3 +35,11 @@ for word in words:
     word_counts[word] = word_counts.get(word, 0) + 1
 
 print(word_counts)
+
+# Set
+
+setA = {'movie', 'cinema', 'theater', 'football'}
+setB = {'cinema', 'ball', 'skating'}
+print(setA | setB)
+print(setA & setB)
+print(setA - setB)
