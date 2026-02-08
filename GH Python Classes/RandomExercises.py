@@ -38,8 +38,16 @@ print(word_counts)
 
 # Set
 
-setA = {'movie', 'cinema', 'theater', 'football'}
-setB = {'cinema', 'ball', 'skating'}
+setA = {'movie@movie.com', 'cinema@ticregex.co', 'theater@gmaill.co', 'football@foot.com'}
+setB = {'cinema@ticregex.co', 'ball@gmail.com', 'skating@skaternationals.com'}
+setC=set ()
 print(setA | setB)
 print(setA & setB)
 print(setA - setB)
+
+
+for email in setA:
+    if email in setB: # Much cleaner than __contains__
+        setC.add(email)
+
+print("Manual Intersection:", setC)
