@@ -12,3 +12,30 @@ else:
         print('The words are anagrams')
     else:
         print('The words are NOT anagrams')
+
+
+#2 Solution
+
+s = "cat"
+t = "dog"
+
+if len(s) != len(t):
+    print(False)
+else:
+    countS = {}
+    countT = {}
+
+    # Fill countS dictionary
+    for char in s:
+        # If 'a' is new, it takes 0 and adds 1. If 'a' exists, it adds 1 to the current count.
+        countS[char] = countS.get(char, 0) + 1
+
+    # Fill countT dictionary
+    for char in t:
+        countT[char] = countT.get(char, 0) + 1
+
+    # Compare the two maps
+    if countS == countT:
+        print("Success: It is an anagram!")
+    else:
+        print("Fail: Not an anagram.")
