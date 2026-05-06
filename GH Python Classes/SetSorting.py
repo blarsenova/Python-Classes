@@ -39,4 +39,16 @@ changes = version_1_configs ^ version_2_configs
 print(f"Differences detected: {changes}")
 # Output: {'timeout:30', 'timeout:60', 'cache:false'}
 
+# Define the sets
+user_permissions = {"READ", "WRITE", "EXECUTE", "DELETE_USER"}
+required_for_action = {"WRITE", "DELETE_USER"}
+
+# Check if required_for_action is a SUBSET of user_permissions
+# In Python, the <= operator checks for subsets
+has_access = required_for_action <= user_permissions
+
+if has_access:
+    print("Access Granted: All required permissions are present.")
+else:
+    print("Access Denied: Missing permissions.")
 
