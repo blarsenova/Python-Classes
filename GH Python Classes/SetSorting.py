@@ -17,3 +17,13 @@ matching_skills = baktygul_skills & job_requirements
 
 print(f"Matches found: {matching_skills}")
 # Output: {'Python', 'SQL'}
+
+# Set Difference (Unique to One Set) In math, this is $A - B$
+required_tools = {"IntelliJ", "Docker", "Git", "Postman"}
+installed_tools = {"Git", "IntelliJ"}
+
+# Find what still needs to be installed (Difference)
+missing_tools = required_tools - installed_tools
+
+print(f"Please install: {missing_tools}")
+# Output: {'Docker', 'Postman'}
