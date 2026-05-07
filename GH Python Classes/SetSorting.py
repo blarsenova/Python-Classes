@@ -52,3 +52,37 @@ if has_access:
 else:
     print("Access Denied: Missing permissions.")
 
+
+    # Define user interest profiles as sets
+user_a_interests = {"coding", "hiking", "sci-fi", "gaming", "coffee"}
+user_b_interests = {"hiking", "photography", "coffee", "traveling", "baking"}
+
+# 1. Intersection: Find shared interests (Mutuals)
+shared = user_a_interests.intersection(user_b_interests)
+
+# 2. Difference: Find what User A likes that User B doesn't (Personalized Recs)
+unique_to_a = user_a_interests.difference(user_b_interests)
+
+# 3. Union: Get a master list of all unique hobbies across both users
+all_hobbies = user_a_interests.union(user_b_interests)
+
+# 4. Symmetric Difference: Hobbies that only one person has, but not both
+divergent_hobbies = user_a_interests.symmetric_difference(user_b_interests)
+
+# --- Display Results ---
+print(f"Shared Interests: {shared}")
+print(f"Suggest to User B (from A's list): {unique_to_a}")
+print(f"Total Unique Hobbies: {len(all_hobbies)}")
+
+# 5. Membership & Modification (Medium Level)
+# Checking if a specific set of tags exists in a user's profile
+must_have_tags = {"hiking", "coffee"}
+
+if must_have_tags.issubset(user_a_interests):
+    print("\nUser A is a 'Nature & Cafe' enthusiast.")
+
+# Removing duplicates from a messy list using set casting
+messy_tags = ["coding", "gaming", "coding", "sci-fi", "gaming", "gaming"]
+cleaned_tags = list(set(messy_tags))
+print(f"Cleaned Tags: {cleaned_tags}")
+
